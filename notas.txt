@@ -1,0 +1,669 @@
+
+CARACTERÍSTICAS DE PYTHON
+Es un lenguaje de programación de propósito general desarrollo de juegos, web, aplicaciones, IA, etc. Es de alto nivel,fácil de aprender porque tiene similitud con el lenguaje humano. Es de tipado dinámico, ejemplo 
+nombre = “juan”
+edad = 21
+Es un lenguaje orientado a objeto y es un lenguaje interpretado, lee línea por línea y lo ejecuta.
+
+QUE SE PUEDE HACER CON PYTHON
+Es utilizado para crear páginas web del lado del servidor (desarrollo web) desarrollo de aplicaciones móviles y de escritorio, optimización de scripts (automatización de batería), analizacion de datos, desarrollo de software, desarrollo de juegos
+
+FUNDAMENTOS
+Datos simples: string, float, int, boolean
+strings (cadenas de texto)
+“hola mundo”
+“””ingrese sus datos
+    nombre = agus
+    edad = 19”””
+int: números enteros 50,70, 40, etc
+float: números decimales 30.8, 4.4, 8.9, etc
+booleano: verdadero o falso False-True
+
+Variables: Son espacios que se almacenan en el espacio de la memoria de nuestro programa.Son datos que son reutilizables y puede variar. Las variables se declaran y después se definen
+a = 10
+b = 2
+c = a + b
+print(c)
+12
+
+nombre = “lisa”
+print(nombre)
+lisa
+
+nombre = “venus”
+nombre = “lisa”
+nombre = “pochita”
+print(nombre)
+venus lisa pochita
+
+del nombre, lo que hace es indefinir esa variable, esto se pone antes de la variable no después 
+del nombre
+nombre = “lisa”
+
+ Datos compuestos: Los datos compuestos tienen adentro otro dato, pueden ser datos simples o complejos pero que se pueden agrupar. El primer dato es una lista
+lista = [“lisa”, “venus”, 1.55,]
+print(lista[0])
+lisa
+otro dato seria tupla
+tupla = (lisa”, “venus”, 1.55)
+print(tupla[1])
+venus
+
+-Diferencias entre tupla y lista
+tupla es un tipo de dato que nunca se puede modificar y lista si se puede cambiar, modificar, ejemplo:
+lista = “pochita ✅
+tupla = “pochita” error ✖️
+ 
+Otro tipo de dato es por conjunto, son elementos desordenados que pueden cambiar, ejemplo. lisa puede pasar a donde está 1.55. Esto se hace con llaves. En un conjunto no puede haber datos que se repita y no se puede acceder a un elemento del conjunto mediante índice
+conjuntos = {“lisa”, “venus”, 1.55}
+
+Diccionario : se usa para guardar datos en pares clave-valor. Sirve para acceder rápidamente a un valor usando su clave, como si fuera un "título" o "etiqueta". ejemplo.
+diccionario = {
+    "nombre" : "agus",
+    "edad" : "19",
+    "estudia" : "programación"
+}
+print(diccionario["edad"])
+
+
+
+OPERADORES ARITMÉTICOS 
+#Suma y resta (+ y -)
+suma = 30 + 50
+resta = 400 - 20
+
+
+#multiplicacion y division (* y /)
+multiplicación = 10 * 5
+división = 100 / 5 #--> siempre nos devuelve un valor float 100/5 = 20.0
+
+
+#potenciación (exponente) (**)
+potencia = 2**5
+
+
+#division baja (//)
+divisionBaja = 200//10 #--> devuelve entero sin coma 200//10 = 20
+
+
+#resto o módulo
+resto = 12 % 5
+
+
+tipo_de_dato = type(5) #-->nos devuelve el tipo de dato
+print(tipo_de_dato)
+
+
+OPERACIONES DE COMPARACIÓN
+
+#nos devuelve dos valores true o false
+igual_que = 8 == 6
+
+
+distinto_de = 8 != 6
+
+
+mayor_que = 8 > 6
+
+
+menor_que = 8 < 6
+
+
+mayor_o_igual = 8 >= 6
+
+
+menor_o_igual = 8 <= 6
+
+Condicionales if- else, elif y if anidados
+#el condicional funciona condición y acción
+   
+contraseña_almacenada = "pochita"
+cotraseña_escrita = "lisa"
+
+
+if contraseña_almacenada == cotraseña_escrita:
+    print("contraseña correcta")
+   
+else:
+    print("contraseña incorrecta")
+#si no se cumple el if va al elif y si tampoco no se cumple va al else
+ingreso_mensual = 80000
+
+
+if ingreso_mensual > 150000:
+    print("sos millonario")
+   
+elif ingreso_mensual > 900000:
+    print("sos clase media")
+   
+else:
+ print("sos pobre")
+
+
+
+#if dentro de otro if se usa para verificar una segunda condición
+# PERO si solo la primera se cumple.
+
+
+edad = 16
+tiene_dni = True
+
+
+if edad >= 16:
+  if tiene_dni:
+      print("puede votar")
+  else:
+      print("necesita dni para votar")
+else:
+    print("es menor de edad")      
+     
+
+
+
+
+OPERADORES LÓGICOS:
+#AND
+
+
+resultado = True & True #devuelve verdadero
+resultado2 = True & False #devuelve falso
+resultado3 = False & True #devuelve falso
+resultado4 = False & False #devuelve falso
+
+
+#OR
+
+
+resultado5 = True | True #devuelve verdadero
+resultado6 = True | False #devuelve verdadero
+resultado7 = False | True  #devuelve verdadero
+resultado8 = False | False #devuelve falso
+
+
+#NOT
+resultado9 = not True #devuelve falso
+resultado10 =  not False #devuelve verdadero
+ 
+
+MÉTODOS DE STRINGS
+
+#método de string es una función especial que viene incorporada en los objetos tipo texto y que te permite modificar, analizar o trabajar con cadenas fácilmente.
+#Los métodos son un dato un . y el ()
+
+
+cadena1 = "tengo mucho sueño"
+cadena2 = "me duele la espalda"
+
+
+#Cuando le pasás un objeto (por ejemplo, una cadena, una lista, un número), te devuelve una lista con los nombres de todos los métodos y propiedades que podés usar en ese objeto. Esto es una función
+
+
+#print(dir(cadena1))
+
+
+#convierte a mayúsculas
+mayusc = cadena1.upper()
+
+
+#convierte a minúscula
+minusc = cadena1.lower()
+
+
+#primer letra en mayúscula
+primer_letra_mayusc = cadena1.capitalize()
+
+
+#buscamos una cadena en otra cadena/los espacios también se cuentan. si no hay coincidencia devuelve valor -1
+búsqueda find = cadena1.find("o")
+
+
+#búsqueda en una cadena en otra cadena si no hay coincidencia lanza una excepción
+busqueda_index = cadena1.index("g")
+
+
+# si es numérico devolvemos true, sino false ejemplo que da true cadena1 = ''774'' SIN cadena de texto
+es_numerico = cadena1.isnumeric()
+
+
+#si es alfanumérico devolvemos true sino false ejemplo: "duki" SIN números los espacios no son alfanuméricos
+es_alfa = cadena1.isalphanum()
+
+
+#búsqueda en una cadena en otra cadena si hay coincidencia devuelve la cantidad de veces que se repita
+contar_coincidencia = cadena1.count("o")
+
+
+#contamos cuántos caracteres hay en una cadena (no es un método es una función)
+contar_caracteres = len(cadena1)
+
+
+#verificamos si una cadena empieza con otra cadena dada, si es asi devuelve true
+empiza_con = cadena1.startswith("g")
+
+
+##verificamos si una cadena termina con otra cadena dada, si es asi devuelve true
+empiza_con = cadena1.endswithswith("o")
+
+
+#reemplaza un pedazo de la cadena dada, por otra dada
+cadena_nueva = cadena1.replace("gojo" , "nanami") #reemplaza gojo por nanami
+
+
+#separa las cadenas con la cadena que le demos
+cadena_separada = cadena1.split(",")
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MÉTODOS DE LISTAS
+#creando una lista con list
+lista = list(["hola", "mundo", 77])
+
+
+#cuenta la cantidad de elementos de una lista
+cantidad_elementos = len(lista)
+
+
+#agregando un elemento a la lista
+lista.append("torta")
+
+
+#agregando un elemento a la lista en un índice específico
+lista.insert(1, "coca")
+
+
+#agregando varios elementos a la lista
+lista.extend(["lisa", "venus"])
+
+
+#eliminado elementos de la lista por su índice
+lista.pop(3) #si dentro ponemos -1 nos elimina el último elemento y así sucesivamente
+
+
+#removiendo un elemento por su valor
+lista.remove("torta")#nos elimina la palabra torta
+
+
+#elimina todos los elementos de la lista
+lista.clear()
+
+
+#ordenando la lista esto se hace sin strings. Si le ponemos ese parámetro nos ordena a lista en reversa (también in strings)
+list.sort(reverse=True)
+
+
+#invirtiendo los elementos de la lista puede estar desordenada lista pero igual la revierte
+lista.reverse()
+
+
+print(lista)
+
+MÉTODOS DE DICCIONARIO
+diccionario = {
+    "nombre" : "agus",
+    "edad" : "19",
+    "¿migajera?" : "si"
+   
+}
+#nos devuelve un objeto
+claves = diccionario.keys()
+
+
+#obteniendo un elemento von get() si no encuentra nada el programa continúa
+valor_de_nombre = diccionario.get("nombre")#-->me da el valor de agus
+
+
+#eliminado todo del diccionario
+diccionario.clear
+
+
+#eliminando un elemento del diccionario y si quiero eliminar un elemento le agrego una coma y el nombre del elemento que quiero borrar
+diccionario.pop("edad")
+
+
+#obteniendo elementos dict_items iterable
+dic_iterable = diccionario.items()
+print(dic_iterable)
+ 
+
+INPUTS (información)
+#pedirle un dato al usuario input siempre nos devuelve texto
+nombre = input("ingresa tu nombre ")
+
+
+#mostrando el dato
+print(f'el nombre es: {nombre}')
+
+
+#pedirle un número al usuario
+numero = input("dame un numero ")
+
+
+#multiplicando el número entero *2
+resultado = int(numero) * 2
+
+
+#multiplicando el número float *2
+resultado = float(numero) * 2
+
+
+#mostrando el resultado
+print(resultado)
+
+
+VARIABLES 2.0
+DESEMPAQUETADO: Es una forma para asignarle valores a las variables de una forma de crear variables nuevas tomando los datos de una tupla, función o conjunto.
+datos = ("agus", "torres", "19")
+nombre, apellido, edad = datos
+
+
+print(apellido)
+
+Esto imprime “torres”, ejecuta según el orden que le pongamos.
+
+Tuplas: tuple es una función que nos permite crear una tupla
+
+
+tupla = tuple(["lisa", "venus"])
+
+
+#creando una tupla sin parentesis de multples datos
+tupla =  "lisa","venus"
+
+
+#creando tupla sin paréntesis de un solo dato
+tupla = "lisa",
+                                    
+Las tuplas se usan si son datos de tipo de lecturas, cuando solo vamos a leer datos se crea la tupla 
+
+Diccionario:
+#crando diccionario  con dic (es como crear variables dentro del parametro)
+diccionario = dict(nombre = "agus", apellido = "torres")
+
+
+#las listas no pueden ser claves y usamos frozenset para meter conjuntos
+diccionario = {frozenset (["lisa", "venus"]): "pochita"}
+
+
+#creando diccionario con fromkeys() valor por defecto: none
+diccionario = dict.fromkeys("nombre", "apellido", "edad")
+
+
+#creando diccionario con fromkeys() valor por defecto: no se
+diccionario = dict.fromkeys(["nombre", "apellido", "edad"], "nose")
+
+
+BUCLES:
+BUCLE FOR: Repetir de una forma controlada la ejecución de un código
+¿Qué es iterar? Recorre un elemento en pedacitos, esos pedacitos y la forma en la que van a ir saltando esos pedacitos lo define un iterador. No todo se puede iterar. Las cosas que se pueden iterar son listas, tuplas, cadenas de texto, conjuntos y diccionario.
+En python son for in
+
+lista = [“manzana”, “pera”, “uva”, “banana”, “kiwi”]
+
+for frutas in lista:
+  print(lista)
+
+esto imprime: manzana, pera, uva, banana, kiwi
+
+LISTAS, TUPLAS, CONJUNTOS
+#recorriendo la lista de frutas
+frutas = ["manzana", "pera", "uva", "banana", "kiwi"]
+
+
+for fruta in frutas:
+    print(f"ahora la variable frutas es igual a: {fruta}")
+   
+#recorriendo la lista de numeros y multiplicado x10
+numeros = [10, 15, 60, 44, 22]
+
+
+for numero in numeros:
+    resultado = numero * 10
+    print(f'el numero {numero} multiplicado por 10 es: {resultado}')
+   
+#iterar dos listas al mismo tiempo. Para hcerlo ambas listas tienen que tener l misma cantidad de elementos al mismo tiempo
+
+
+for numero,fruta in zip(frutas,numeros):
+    print(f'recorriendo la lista 1 {fruta}')
+    print(f'recorriendo la lista 2 {numero}')
+   
+#itera numeros del 1 al 10
+
+
+for num in range(1,30):
+    print(num)
+   
+#forma no optima de recorrer una lista por su indice
+for num in range(len(numeros)):
+    print(numeros[num])
+   
+#forma correcta de recorrer la lista por su indice  
+for num in enumerate:
+    indice = num[0]
+    valor = [1]
+    print(f'el indcie es {indice} el valor es {valor}')
+   
+#usando el else
+for numero in numeros:
+    print(f'ejecutando el ultimo bucle, valor actual {numero}')
+   
+else:
+    print("el bucle termino")  
+   
+#todo lo anterior tambien funciona con tuplas
+
+
+DICCIONARIO:
+diccionario = {
+    "nombre" : "agus",
+    "apellido":"tores",
+    "edad" : 19
+}
+#recorriendo el diccionario para obtener las claves
+for key in diccionario:
+    key
+    print(f'la clave es {key}')
+   
+   
+#recorriendo el diccionario coon items() para obtener las claves y los valores
+for datos in diccionario.items():
+    key = datos [0]
+    value = [1]
+    print(f'la clave es: {key} y el valor es: {value}')
+   
+   
+
+MÁS ITERACIONES
+animales = ["gato", "perro", "pez", "cotorra", "erizo", "caballo", "pato"]
+cadena = "lisa, venus"
+numeros = [28, 5, 18]
+
+
+#evitando adoptar un pez con la sentencia continue
+for animal in animales:
+  if animal == "pez":
+      continue
+  print(f'voy a adoptar un: {animal}')
+ 
+
+
+#evitando adoptar mas animales (cuando llegue a caballo se termina de ejecutar) si hay un "else" tampoco se ejecuta
+for animal in animales:
+    if animal == "caballo":
+        break
+    print(f'voy a adoptar un: {animal}')
+   
+
+
+#recorrer una cadena de texto
+for letra in cadena:
+    print(letra)
+   
+#for en una solalinea de codigo, se puede ser con cualquier operacion
+numeros_duplicados = [x * 2 for x in numeros]
+print(numeros_duplicados)
+
+
+
+BUCLE WHILE: Siempre se va a ejecutar mientras que la ejecución sea verdadera, el while puede ser infinito es decir
+num = 1
+while num < 5:
+print(num)
+num+=1 
+Esto se ejecuta hasta el número 4, porque cuando llega al 5 deja de ser verdad
+#creando un contador que va a ir sumandose
+contador = 0
+
+
+#mientras que la condicion se cumpla,el bucle se va a segur ejecutando, vuelta tras velta se verifica la condicion
+
+
+while contador < 10:
+    contador+=1
+    print(contador)
+
+
+FUNCIONES
+
+Es un fragmento de código que podemos reutilizar en cualquier otro momento sin la necesidad de escribirlo de nuevo.
+FUNCIONES CREADAS POR PYTHON:
+
+numeros = [2, 7, 25, 10, 44]
+
+
+#encontrando el numero mayor de una lista
+numero_mas_alto = max(numeros)
+print(f'el numero mas alto es: {numero_mas_alto}')
+
+
+#encontrando el numero menor de una lista
+numero_mas_bajo = min(numeros)
+print(f'el numero mas bajo es: {numero_mas_bajo}')
+
+
+#redondeando a 6 decimales
+numero = round(12.67803,4) #poniendo la coma nos pone la cantidad de decimales
+print(numero)
+
+
+#retorna false -> 0, vacio, false, none / true -> distinto a 0, true, cadena, datos no vacio
+numero = bool(8)
+print(numero)
+
+
+#retorna true, si todos los valores son verdaderos
+resultado_all = all([["jkjddkj"], "true", [89]])
+print(resultado_all)
+
+
+#suma todos los valores un iterable solo con numeros
+suma_total = sum(numeros)
+print(f'la suma total es {suma_total}')
+
+CREANDO FUNCIONES PROPIAS:
+Para crear nuestra propia función es con def
+def saludar(nombre): #-> esto es un parametro, es una variable que existe dentro de la funcion
+    print(f'hola {nombre} :)')
+ 
+
+#forma no optima de sumar valores
+'''def suma(lista):
+    nummeros_sumados = 0
+    for numeros in lista:
+        nummeros_sumados = nummeros_sumados + numeros
+    return nummeros_sumados
+
+
+resultado = suma([10, 20,30])    
+print(resultado)'''
+
+
+#utilizando el parametro args
+def suma (*numeros): # el * le estamos diciendo que es una lista
+    return sum(numeros)
+resultado = suma(12,20,30)
+print(resultado)
+   
+
+
+
+#creando una funcion con tres parametros
+'''def frase (nombre, apellido, adjetivo):
+    return f'hola {nombre} {apellido} sos una {adjetivo}'
+
+
+resultado = frase("agus", "torres", "capa")
+print(resultado)'''
+
+
+#utilizando keyword arguments (argumentos de palabras claves)
+'''def frase (nombre, apellido, adjetivo):
+    return f'hola {nombre} {apellido} sos una {adjetivo}'
+
+
+#resultado = frase(adjetivo = "capa", apellido = "torres", nombre = "agus")
+#print(resultado)'''
+
+
+#creando a funcion con un parametro opcional y un valor por defecto
+def frase (nombre, apellido, adjetivo = "inteligente"):
+    return f'hola {nombre} {apellido} sos una {adjetivo}'
+
+
+resultado = frase("agus", "torres", "bruta")
+print(resultado)
+ #el valor por defecto seria inteligente y el parametro opcional seria adjetivo
+ #el valor por defecto se puede cambiar
+   
+
+
+
+
+
+
+FUNCIONES LAMBDA:
+#lambda es crear una funcion anonima, no tiene nombre que despues se puede almacenar en variables
+numeros = [1,2,3,4,5,6,7,8,9,10]
+#creando una funcion lambda para multiplicar por dos
+multiplicar_por_dos = lambda x : x * 2
+
+
+#creando una funcion comun que nos diga si es par o no
+def es_par(num):
+    if (num % 2 == 0):
+        return True
+
+
+#usando filter con una funcion comun
+numeros_pares = filter(es_par, numeros)
+
+
+#creando lo mismo que antes pero con lambda
+numeros_pares = filter(lambda numero:numero %2 == 0, numeros)
+print(list(numeros_pares))
+#haciendo esto nos ahorramos todo lo anterior
+
+
+
+
+
+
+
