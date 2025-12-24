@@ -255,23 +255,6 @@ cadena_separada = cadena1.split(",")
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 MÉTODOS DE LISTAS
 #creando una lista con list
 lista = list(["hola", "mundo", 77])
