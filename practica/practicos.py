@@ -93,4 +93,47 @@ listaUser.reverse()
 print(f"los cinco nombres ingresados fueron: {listaUser}")
 print(f"la lista inververtida es {listaUser}")
 
+print("------------------------------")
 
+'''Crear una tupla con datos personales:
+
+Nombre
+
+Apellido
+
+Edad
+Mostrar cada dato por separado usando desempaquetado'''
+
+tupleDate = ("agustina", "torres", "19")
+nombrep,apellidop,edadp = tupleDate
+
+print(f'el nombre es: {nombrep}, apellido: {apellidop}, edad: {edadp}')
+print("------------------------------")
+
+'''Crear un conjunto con números repetidos:
+
+Mostrar el conjunto
+
+Explicar por qué no se repiten'''
+
+conjunto = {10,33,20,10}
+print(f'el conjunto es {conjunto}')
+print("--------------------------------")
+
+'''Crear un diccionario con:
+
+nombre
+
+edad
+
+ciudad
+Mostrar los valores usando las claves'''
+
+diccionario = {
+    "nombre": "lisa",
+    "edad": "10 años",
+    "ciudad": "tandil"
+}
+print("nombre:", diccionario["nombre"])
+print("edad:", diccionario["edad"])
+print("ciudad:", diccionario["ciudad"])
