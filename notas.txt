@@ -152,7 +152,11 @@ tiene_dni = True
 if edad >= 16:
   if tiene_dni:
       print("puede votar")
-  else:
+  else:Pedir una contraseña:
+
+Verificar si tiene más de 8 caracteres
+
+Verificar si es alfanumérica
       print("necesita dni para votar")
 else:
     print("es menor de edad")      
